@@ -3,10 +3,11 @@
 #include <string.h>
 
 /**
- * main - Prints the alphabet without q and e.
+ * main -> Prints the alphabet without q and e
  *
- * Return: Always 0 (Success)
+ *Return: Always 0 (Successful)
  */
+
 int main(void)
 {
 	int i;
@@ -18,6 +19,7 @@ int main(void)
 			putchar(i);
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
