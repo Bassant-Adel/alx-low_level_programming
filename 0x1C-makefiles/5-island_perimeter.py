@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-""" island """
+""" island described """
 
 
 def island_perimeter(grid):
+    """ Perimeter """
     w = len(grid[0])
     h = len(grid)
     edges = 0
@@ -16,4 +17,5 @@ def island_perimeter(grid):
                     edges += 1
                 if (b > 0 and grid[b - 1][a] == 1):
                     edges += 1
+
     return (size * 4 - edges * 2)
