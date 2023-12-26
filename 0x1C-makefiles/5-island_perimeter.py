@@ -3,13 +3,13 @@
 
 
 def island_perimeter(grid):
-    bw = len(grid[0])
-    hb = len(grid)
+    w = len(grid[0])
+    h = len(grid)
     edges = 0
     size = 0
 
-    for b in range(hb):
-        for a in range(bw):
+    for b in range(h):
+        for a in range(w):
             if grid[b][a] == 1:
                 size += 1
                 if (a > 0 and grid[b][a - 1] == 1):
